@@ -1,32 +1,15 @@
-
-// import { GoogleOAuthProvider } from '@react-oauth/google';
-// // Component
-// // import Messenger from "./Component/Messenger";
-
-// function App() {
-//   const clientId='495249612208-beor84tgi93m6kfdbajfeu1ih8ud3d88.apps.googleusercontent.com';
-//   return (
-//     <GoogleOAuthProvider clientId={clientId}>
-//      {/* <Messenger/> */}
-//     </GoogleOAuthProvider>
-//   );
-// }
-
-// export default App;
-
 import { GoogleOAuthProvider } from "@react-oauth/google";
-import Messenger from "./Component/Messenger";
-import AccountProvider from "./Context/AccountProvider";
 
+import Messanger from "./components/Messenger";
+import AccountProvider from "./context/AccountProvider";
 
 function App() {
-  const clientId = '495249612208-beor84tgi93m6kfdbajfeu1ih8ud3d88.apps.googleusercontent.com'
+  const clientId = '279231209397-il8gbiaol9k0bcafmbqj3ra7kj9li5h9.apps.googleusercontent.com'
   return (
     <GoogleOAuthProvider clientId={clientId}>
       <AccountProvider>
-      <Messenger/>
+        <Messanger />
       </AccountProvider>
-      
     </GoogleOAuthProvider>
   );
 }
